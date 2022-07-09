@@ -2,10 +2,23 @@
     text-align: center;
 }
 
-.button {
+.start {
     background-color: rgb(226, 73, 73);
     border : 3px, solid, black; 
     border-radius: 14px;
     color: white;
     font-size: 20px;
 }
+
+#timer {
+    position: relative;
+    left:40%;
+    font-weight: bolder;
+    font-size: 30px;
+    
+}
+ ol{
+    list-style: none;
+ }
+
+ 

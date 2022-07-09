@@ -9,28 +9,29 @@
     <title>Coding Quiz</title>
 </head>
 <body>
-  <main class="welcome">
+    <aside id="timer"></aside>
+    <main class="welcome">
     <h1>Coding Quiz Challenge!</h1>
     <p>Answer the following multiple choice questions in the one minute time alloted. <br> If you get an answer wrong you will have 10 seconds taken from your time, so be careful!</p>
    
     <h2> Press Start Buttin to Begin</h2>
 
-    <button class = "button"> Start the Quiz</button>
+    <button class = "start" > Start the Quiz</button>
   </main>
   <section id="quiz">
         <aside id="qs"></aside>
-        <aside id="as">
+        <aside id="ans">
             <ol>
-                <li id=0></li>
-                <li id=1></li>
-                <li id=2></li>
-                <li id=3></li>
+                <li><button id="0"></button></li>
+                <li><button id="1"></button></li>
+                <li><button id="2"></button></li>
+                <li><button id="3"></button></li>
             </ol>
         </aside>
   </section>
-  <aside id="timer"></aside>
+  
   <!-- high score section -->
 
-    <script src="assets/js/script.js"></script>
+    <script src="assets/script.js"></script>
 </body>
 </html>
