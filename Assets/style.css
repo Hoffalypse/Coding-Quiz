@@ -1,0 +1,11 @@
+* {
+    text-align: center;
+}
+
+.button {
+    background-color: rgb(226, 73, 73);
+    border : 3px, solid, black; 
+    border-radius: 14px;
+    color: white;
+    font-size: 20px;
+}
