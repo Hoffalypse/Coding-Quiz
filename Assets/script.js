@@ -12,6 +12,8 @@ let initials = document.getElementById("initials");
 let timer = document.createElement("p");
 let quiz = document.getElementById("quiz");
 let question = document.createElement("p");
+let init = document.getElementById("init");
+let submit = document.getElementById("submit");
 // all of the answers to the question 
 let ans1 = document.getElementById("0");
 let ans2 = document.getElementById("1");
@@ -58,6 +60,8 @@ ans17.setAttribute("style", "display:none;");
 ans18.setAttribute("style", "display:none;");
 ans19.setAttribute("style", "display:none;");
 ans20.setAttribute("style", "display:none;");
+init.setAttribute("style", "display:none;");
+submit.setAttribute("style","display:none");
 
 
 start.addEventListener("click", function () {
@@ -401,12 +405,32 @@ function takeQuiz3() {
 //end of game function 
       function gameOver() {
         timer.setAttribute("style", "display:none;");
-        let highScore = "All done your score is : " + score;
-        // highScore.setAttribute("style", "font-size: 40px; font-weight:bolder;");
+        totalScore = score;
+        if (score < 0) {
+          score = 0;
+          }
+          let highScore = "All done your score is : " + score;
         high.append(highScore);
-        let name = "Please enter your initials below";
-        initials.append(name);
+        let names = "Please enter your initials below";
+        initials.append(names);
+        init.setAttribute("style", "box-sizing= border-box; border-radius: 10px;");
+        
+         submit.setAttribute("style", "display:inine;");
+         
+         submit.addEventListener("click", function () {
+          let data = document.getElementById('init').value;
+          console.log(data);
+          console.log(totalScore);
+
+
+        
+       
+    
+        
+        
+          
 
 
     
+})
 }
