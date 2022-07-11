@@ -1,30 +1,58 @@
-* {
+ *{
     text-align: center;
+  
 }
 
 .start {
-    background-color: rgb(226, 73, 73);
-    border : 3px, solid, black; 
-    border-radius: 14px;
-    color: white;
-    font-size: 20px;
+  background-color: rgb(226, 73, 73);
+  border: 3px, solid, black;
+  border-radius: 14px;
+  color: white;
+  font-size: 20px;
 }
 
 #timer {
-    position: relative;
-    left:40%;
+  /* display: flex;
+  justify-content: right; */
+  
+ 
+  font-weight: bolder;
+  font-size: 30px;
+  align-content: space-around;
+}
+#leaderboard {
+    /* display: flex;
+    position: relative; */
+    float: left;
     font-weight: bolder;
     font-size: 30px;
+    color: black;
+    top: 80%;
+    
+     
     
 }
- ol{
-    list-style: none;
- }
+ol {
+  list-style: none;
+}
 
- #high{
-    font-weight: bolder;
-    font-size: 30px;
-    
- }
-
- 
+#high {
+  font-weight: bolder;
+  font-size: 30px;
+}
+@media screen and (max-width: 750px) {
+  #timer {
+    font-size: 20px;
+  }
+  #leaderboard {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 550px) {
+  #timer {
+    font-size: 15px;
+  }
+  #leaderboard {
+    font-size: 15px;
+  }
+}

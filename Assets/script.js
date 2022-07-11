@@ -1,4 +1,4 @@
-let score = 60;
+let score = 50;
 let start = document.querySelector(".start");
 let welcome = document.querySelector(".welcome");
 let countdown = document.getElementById("timer");
@@ -9,12 +9,15 @@ let qs4 = document.getElementById("qs4");
 let qs5 = document.getElementById("qs5");
 let high = document.getElementById("high");
 let initials = document.getElementById("initials");
-let timer = document.createElement("p");
+let timer = document.createElement("span");
 let quiz = document.getElementById("quiz");
 let question = document.createElement("p");
 let init = document.getElementById("init");
 let submit = document.getElementById("submit");
+
 // all of the answers to the question 
+
+let an1 = document.querySelectorAll("li");
 let ans1 = document.getElementById("0");
 let ans2 = document.getElementById("1");
 let ans3 = document.getElementById("2");
@@ -39,7 +42,12 @@ let ans20 = document.getElementById("19");
 
 
 timer.textContent = "Time Left: " + score;
+timer.setAttribute("style", "float:right");
 countdown.appendChild(timer);
+
+
+
+
 ans1.setAttribute("style", "display:none;");
 ans2.setAttribute("style", "display:none;");
 ans3.setAttribute("style", "display:none;");
@@ -64,6 +72,7 @@ init.setAttribute("style", "display:none;");
 submit.setAttribute("style","display:none");
 
 
+
 start.addEventListener("click", function () {
   welcome.setAttribute("style", "display:none;");
 
@@ -72,16 +81,19 @@ start.addEventListener("click", function () {
       score--;
       timer.textContent = "Time Left: " + score;
       countdown.appendChild(timer);
+      
     } else {
       clearInterval(timeinterval);
-      //end game code here
+      gameOver();
+       
     }
   }, 1000);
-  takeQuiz();
   
+  takeQuiz();
 });
 //Question 1
  function takeQuiz() {
+  
   const questionOne = "Whats the best color?";
   qs.setAttribute("style", "font-size:50px; font-weight:bolder;");
   qs.append(questionOne);
@@ -91,6 +103,7 @@ start.addEventListener("click", function () {
     ansThree: "green",
     ansFour: "purple",
   };
+ 
   ans1.setAttribute("style", "font-weight:bolder; border: 2px, solid, black;");
   ans2.setAttribute("style", "font-weight:bolder; border: 2px, solid, black;");
   ans3.setAttribute("style", "font-weight:bolder; border: 2px, solid, black");
@@ -107,9 +120,12 @@ start.addEventListener("click", function () {
     ans2.setAttribute("style","display:none");
     ans3.setAttribute("style","display:none");
     ans4.setAttribute("style","display:none");
+   
     if (score > 0) {
         takeQuiz2()
     }
+    
+    
 })    
     ans2.addEventListener("click",function () {
         qs.setAttribute("style", "display:none");
@@ -120,8 +136,10 @@ start.addEventListener("click", function () {
         (score -= 15);
         if (score > 0) {
             takeQuiz2()
-        }    
+        }   
+       
      })
+
      ans3.addEventListener("click",function () {
         qs.setAttribute("style", "display:none");
         ans1.setAttribute("style", "display:none");
@@ -130,8 +148,10 @@ start.addEventListener("click", function () {
         ans4.setAttribute("style","display:none");
         (score -= 15);
         if (score > 0) {
-            takeQuiz2()
-        }    
+            takeQuiz2();
+        
+        }
+       
      })
      ans4.addEventListener("click",function () {
         qs.setAttribute("style", "display:none");
@@ -143,6 +163,7 @@ start.addEventListener("click", function () {
         if (score > 0) {
             takeQuiz2()
         }    
+       
      })
     }
 //Question 2 
@@ -177,7 +198,10 @@ function takeQuiz2() {
     if (score > 0) {
         takeQuiz3()
     }
-})    
+    else {
+      
+    }
+})   
     ans6.addEventListener("click",function () {
         qs2.setAttribute("style", "display:none");
         ans5.setAttribute("style", "display:none");
@@ -187,6 +211,7 @@ function takeQuiz2() {
         if (score > 0) {
             takeQuiz3()
         }    
+       
      })
      ans7.addEventListener("click",function () {
         qs2.setAttribute("style", "display:none");
@@ -198,6 +223,7 @@ function takeQuiz2() {
         if (score > 0) {
             takeQuiz3()
         }    
+       
      })
      ans8.addEventListener("click",function () {
         qs2.setAttribute("style", "display:none");
@@ -209,9 +235,10 @@ function takeQuiz2() {
         if (score > 0) {
             takeQuiz3()
         }    
+       
      })
-    
-}
+    }  
+
 //Question 3
 function takeQuiz3() {
     const questionThree = "How many kids fit on a bus";
@@ -243,6 +270,7 @@ function takeQuiz3() {
       if (score > 0) {
           takeQuiz4()
       }
+      
   })    
       ans10.addEventListener("click",function () {
           qs3.setAttribute("style", "display:none");
@@ -254,6 +282,7 @@ function takeQuiz3() {
           if (score > 0) {
               takeQuiz4()
           }    
+         
        })
        ans11.addEventListener("click",function () {
           qs3.setAttribute("style", "display:none");
@@ -265,6 +294,8 @@ function takeQuiz3() {
           if (score > 0) {
               takeQuiz4()
           }    
+         
+          
        })
        ans12.addEventListener("click",function () {
           qs3.setAttribute("style", "display:none");
@@ -275,6 +306,7 @@ function takeQuiz3() {
           if (score > 0) {
               takeQuiz4()
           }    
+         
        })
       }
       //Question 4
@@ -307,6 +339,7 @@ function takeQuiz3() {
           if (score > 0) {
               takeQuiz5()
           }
+         
       })    
           ans14.addEventListener("click",function () {
               qs4.setAttribute("style", "display:none");
@@ -318,6 +351,7 @@ function takeQuiz3() {
               if (score > 0) {
                   takeQuiz5()
               }    
+            
            })
            ans15.addEventListener("click",function () {
               qs4.setAttribute("style", "display:none");
@@ -329,6 +363,7 @@ function takeQuiz3() {
               if (score > 0) {
                   takeQuiz5()
               }    
+            
            })
            ans16.addEventListener("click",function () {
               qs4.setAttribute("style", "display:none");
@@ -340,6 +375,7 @@ function takeQuiz3() {
               if (score > 0) {
                   takeQuiz5()
               }    
+            
            })
           }
  //Question 5
@@ -370,7 +406,8 @@ function takeQuiz3() {
       ans19.setAttribute("style","display:none");
       ans20.setAttribute("style","display:none");
       (score -= 15);
-      gameOver();
+      
+     
   })    
       ans18.addEventListener("click",function () {
           qs5.setAttribute("style", "display:none");
@@ -378,7 +415,7 @@ function takeQuiz3() {
           ans18.setAttribute("style","display:none");
           ans19.setAttribute("style","display:none");
           ans20.setAttribute("style","display:none");
-          gameOver();
+          
           
        })
        ans19.addEventListener("click",function () {
@@ -388,7 +425,7 @@ function takeQuiz3() {
           ans19.setAttribute("style","display:none");
           ans20.setAttribute("style","display:none");
           (score -= 15);
-          gameOver();
+          
     
        })
        ans20.addEventListener("click",function () {
@@ -398,13 +435,27 @@ function takeQuiz3() {
           ans19.setAttribute("style","display:none");
           ans20.setAttribute("style","display:none");
           (score -= 15);
-             gameOver();
+          
        })
       }
 
+
 //end of game function 
       function gameOver() {
-        timer.setAttribute("style", "display:none;");
+
+        // timer.setAttribute("style", "display:none;");
+        
+        
+        for (let i = 0; i < 20; i++) {
+          an1[i].setAttribute("style", "display:none;")
+          
+          
+        }
+        qs.setAttribute("style", "display:none");
+        qs2.setAttribute("style", "display:none");
+        qs3.setAttribute("style", "display:none");
+        qs4.setAttribute("style", "display:none");
+        qs5.setAttribute("style", "display:none");
         totalScore = score;
         if (score < 0) {
           score = 0;
@@ -420,17 +471,12 @@ function takeQuiz3() {
          submit.addEventListener("click", function () {
           let data = document.getElementById('init').value;
           console.log(data);
-          console.log(totalScore);
+          console.log(totalScore)
 
-
+          localStorage.setItem("data",initials);
+          localStorage.setItem("totals", totalScore);
         
-       
-    
-        
-        
-          
-
-
-    
+          window.location.replace("./assets/Leaderboard.html");
+         
 })
 }
