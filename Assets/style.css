@@ -1,7 +1,6 @@
- *{
-    text-align: center;
-  
-}
+* {
+  text-align: center;
+} 
 
 .start {
   background-color: rgb(226, 73, 73);
@@ -9,37 +8,57 @@
   border-radius: 14px;
   color: white;
   font-size: 20px;
+  
 }
 
 #timer {
-  /* display: flex;
-  justify-content: right; */
-  
- 
   font-weight: bolder;
   font-size: 30px;
   align-content: space-around;
 }
 #leaderboard {
-    /* display: flex;
-    position: relative; */
-    float: left;
-    font-weight: bolder;
-    font-size: 30px;
-    color: black;
-    top: 80%;
-    
-     
-    
+  float: left;
+  font-weight: bolder;
+  font-size: 30px;
+  color: black;
+  top: 80%;
 }
 ol {
   list-style: none;
+   
+}
+
+.bu {
+  
+  display: table-column;
+  /* position: relative; */
+  left:25%;
+  background-color: rgb(226, 73, 73);
+  color: white;
+  border-radius: 15px;
 }
 
 #high {
-  font-weight: bolder;
-  font-size: 30px;
+position: relative;
+align-items: center;
+text-align: center;  
+font-weight: bolder;
+font-size: 30px;
 }
+
+/* Leaderboard styling */
+
+.table {
+    font-size: 20px;
+    padding:10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+/* Media queries to make the sizing for a better UI */
 @media screen and (max-width: 750px) {
   #timer {
     font-size: 20px;

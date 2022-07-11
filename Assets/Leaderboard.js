@@ -1,4 +1,9 @@
 //hello this is a new file
 let initials = localStorage.getItem("data");
+let total = localStorage.getItem("totalScore")
 
-console.log(initials);
+let table = document.getElementById("table");
+
+
+
+
