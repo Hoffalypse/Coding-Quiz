@@ -10,7 +10,13 @@
   font-size: 20px;
   
 }
+#quiz {
+  display: block;
+  margin: 60px auto;
+  padding: 25px;
+  width: 40vw;
 
+}
 #timer {
   font-weight: bolder;
   font-size: 30px;
@@ -29,13 +35,12 @@ ol {
 }
 
 .bu {
+  display: flex;
   
-  display: table-column;
-  /* position: relative; */
-  left:25%;
   background-color: rgb(226, 73, 73);
   color: white;
   border-radius: 15px;
+  margin:3px;
 }
 
 #high {
@@ -48,7 +53,7 @@ font-size: 30px;
 
 /* Leaderboard styling */
 
-.table {
+#table {
     font-size: 20px;
     padding:10px;
     margin-left: auto;
@@ -56,6 +61,18 @@ font-size: 30px;
 }
 tr:nth-child(even) {
     background-color: #dddddd;
+  }
+
+  .box{
+    display: block;
+    background-color:	#4f93a8;
+    border: 1px solid #eceff1;
+    border-radius: 8px;
+    box-shadow: grey 0 5px 5px 0,
+      rgba(60, 64, 67, 0.15) 0 2px 4px 3px;
+    margin: 60px auto;
+    padding: 25px;
+    width: 40vw;
   }
 
 /* Media queries to make the sizing for a better UI */

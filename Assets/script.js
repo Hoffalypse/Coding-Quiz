@@ -85,7 +85,7 @@ start.addEventListener("click", function () {
 });
 //Question 1
 function takeQuiz() {
-  const questionOne = "Which is not a type of variable data ?";
+  const questionOne = "Which of the following is not a type of variable data ?";
   qs.setAttribute("style", "font-size:40px; font-weight:bolder;");
   qs.append(questionOne);
   const answers = {
@@ -123,7 +123,7 @@ function takeQuiz() {
     ans3.setAttribute("style", "display:none");
     ans4.setAttribute("style", "display:none");
 
-    score -= 15;
+    score -= 10;
     if (score > 0) {
       takeQuiz2();
     }
@@ -136,7 +136,7 @@ function takeQuiz() {
     ans3.setAttribute("style", "display:none");
     ans4.setAttribute("style", "display:none");
 
-    score -= 15;
+    score -= 10;
     if (score > 0) {
       takeQuiz2();
     }
@@ -148,7 +148,7 @@ function takeQuiz() {
     ans3.setAttribute("style", "display:none");
     ans4.setAttribute("style", "display:none");
 
-    score -= 15;
+    score -= 10;
     if (score > 0) {
       takeQuiz2();
     }
@@ -182,7 +182,7 @@ function takeQuiz2() {
     ans6.setAttribute("style", "display:none");
     ans7.setAttribute("style", "display:none");
     ans8.setAttribute("style", "display:none");
-    score -= 15;
+    score -= 10;
     if (score > 0) {
       takeQuiz3();
     } 
@@ -203,7 +203,7 @@ function takeQuiz2() {
     ans6.setAttribute("style", "display:none");
     ans7.setAttribute("style", "display:none");
     ans8.setAttribute("style", "display:none");
-    score -= 15;
+    score -= 10;
     if (score > 0) {
       takeQuiz3();
     }
@@ -214,7 +214,7 @@ function takeQuiz2() {
     ans6.setAttribute("style", "display:none");
     ans7.setAttribute("style", "display:none");
     ans8.setAttribute("style", "display:none");
-    score -= 15;
+    score -= 10;
     if (score > 0) {
       takeQuiz3();
     }
@@ -248,7 +248,7 @@ function takeQuiz3() {
     ans10.setAttribute("style", "display:none");
     ans11.setAttribute("style", "display:none");
     ans12.setAttribute("style", "display:none");
-    score -= 15;
+    score -= 10;
     if (score > 0) {
       takeQuiz4();
     }
@@ -259,7 +259,7 @@ function takeQuiz3() {
     ans10.setAttribute("style", "display:none");
     ans11.setAttribute("style", "display:none");
     ans12.setAttribute("style", "display:none");
-    score -= 15;
+    score -= 10;
     if (score > 0) {
       takeQuiz4();
     }
@@ -270,7 +270,7 @@ function takeQuiz3() {
     ans10.setAttribute("style", "display:none");
     ans11.setAttribute("style", "display:none");
     ans12.setAttribute("style", "display:none");
-    score -= 15;
+    score -= 10;
     if (score > 0) {
       takeQuiz4();
     }
@@ -323,7 +323,7 @@ function takeQuiz4() {
     ans14.setAttribute("style", "display:none");
     ans15.setAttribute("style", "display:none");
     ans16.setAttribute("style", "display:none");
-    score -= 15;
+    score -= 10;
     if (score > 0) {
       takeQuiz5();
     }
@@ -334,7 +334,7 @@ function takeQuiz4() {
     ans14.setAttribute("style", "display:none");
     ans15.setAttribute("style", "display:none");
     ans16.setAttribute("style", "display:none");
-    score -= 15;
+    score -= 10;
     if (score > 0) {
       takeQuiz5();
     }
@@ -345,7 +345,7 @@ function takeQuiz4() {
     ans14.setAttribute("style", "display:none");
     ans15.setAttribute("style", "display:none");
     ans16.setAttribute("style", "display:none");
-    score -= 15;
+    score -= 10;
     if (score > 0) {
       takeQuiz5();
     }
@@ -378,7 +378,7 @@ function takeQuiz5() {
     ans18.setAttribute("style", "display:none");
     ans19.setAttribute("style", "display:none");
     ans20.setAttribute("style", "display:none");
-    score -= 15;
+    score -= 10;
     if (finalTime > 0) {
       clearInterval(finalTime);
       gameOver();
@@ -401,7 +401,7 @@ function takeQuiz5() {
     ans18.setAttribute("style", "display:none");
     ans19.setAttribute("style", "display:none");
     ans20.setAttribute("style", "display:none");
-    score -= 15;
+    score -= 10;
     if (finalTime > 0) {
       clearInterval(finalTime);
       gameOver();
@@ -413,7 +413,7 @@ function takeQuiz5() {
     ans18.setAttribute("style", "display:none");
     ans19.setAttribute("style", "display:none");
     ans20.setAttribute("style", "display:none");
-    score -= 15;
+    score -= 10;
     if (finalTime > 0) {
       clearInterval(finalTime);
       gameOver();
