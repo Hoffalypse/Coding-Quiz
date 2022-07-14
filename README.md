@@ -18,8 +18,9 @@ Note that if an incorrect answer is clicked the user will lose 10 seconds off th
 
 Shown below is an example of one of the questions. Use the mouse to click on the correct response. After answering user will be taken automatically to the next question. There are five questions in total.
 
+<p align ="center">
 <img src="./images/Question.PNG" alt = "question example">
-
+</p>
 
 
 After all the questions have been completed or the time has run out user will be taken to screen shown below which will ask to give initials to be taken with the score to the Leaderboard.
