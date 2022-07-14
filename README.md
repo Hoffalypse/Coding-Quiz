@@ -9,9 +9,9 @@ This project is a quiz with coding questions. It keeps score by counting the tim
 
 ## Description
 When the user opens the link user will be shown a page and the rules of the game to be played along with a start button to begin the game.
-
+<p align ="center">
 <img src="./images/start-screen.PNG" alt ="start button and rules">
-
+</p>
 Note that if an incorrect answer is clicked the user will lose 10 seconds off their time.
 
 
@@ -24,9 +24,9 @@ Shown below is an example of one of the questions. Use the mouse to click on the
 
 
 After all the questions have been completed or the time has run out user will be taken to screen shown below which will ask to give initials to be taken with the score to the Leaderboard.
-
+<p align ="center">
 <img src = "./images/initials-screen.PNG" alt = "submit initials screen">
-
+</p>
 
 
 Finally user will be taken to the leaderboard where all past scores are shown. User will have the choice to delete the past scores and to play the game again. 
