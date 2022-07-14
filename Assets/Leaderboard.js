@@ -1,14 +1,34 @@
-//hello this is a new file
-let initials = localStorage.getItem("data");
+let list = document.getElementById("list");
+let erase = document.getElementById("erase");
+let one = document.createElement("td");
+let scoreString = [];
+let initialsString = [];
+
+
+let nameInput = localStorage.getItem("data")
 let total = localStorage.getItem("totalScore")
 
-let table = document.getElementById("table");
-let input = document.getElementById("input");
+let totalInput = initials +  total;
+console.log(totalInput);
 
-let one = document.createElement("td");
+if (totalInput !== null) {
 
-input.appendChild(initials);
+    for (var i = 0; i < localStorage.length/2; i++) {
+
+        var createLi = document.createElement("li");
+        createLi.textContent = nameInput + " " + total;
+        list.appendChild(createLi);
+
+    }
+}
 
 
 
 
+erase.addEventListener("click", function() {
+
+localStorage.clear();
+location.reload();
+})
+
+  

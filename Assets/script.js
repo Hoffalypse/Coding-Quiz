@@ -450,9 +450,15 @@ function gameOver() {
     console.log(data);
     console.log(totalScore);
 
+    if (totalScore < 0) {
+
+      totalScore = 0;
+      
+    }
+
     localStorage.setItem("data", data);
     localStorage.setItem("totalScore", totalScore);
 
-    window.location.replace("./assets/Leaderboard.html");
+    window.location.replace("./Leaderboard.html");
   });
 }
