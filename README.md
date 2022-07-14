@@ -1,4 +1,4 @@
-# Coding-Quiz
+# Coding Quiz Project
 This project is a quiz with coding questions. It keeps score by counting the time left when all answers are completed. This code was written completely from scratch.
 
 ## Table of contents
@@ -34,6 +34,12 @@ Finally user will be taken to the leaderboard where all past scores are shown. U
 The technologies used and what percetages each was used is listed below.
 
 <img src = "./images/languages.PNG" alt = "languages used">
+
+
+## Link to Deployed Website 
+Test your coding knowledge here!
+https://hoffalypse.github.io/Coding-Quiz/
+
 
 ## Acknowledgments
 Andres Jimenez (Tudor) <br>
