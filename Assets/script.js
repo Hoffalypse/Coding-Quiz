@@ -1,3 +1,4 @@
+//setting all variables 
 let score = 50;
 let start = document.querySelector(".start");
 let welcome = document.querySelector(".welcome");
@@ -14,6 +15,7 @@ let question = document.createElement("p");
 let init = document.getElementById("init");
 let submit = document.getElementById("submit");
 let finalTime = 0;
+let leaderboard = document.getElementById("leaderboard");
 
 // all of the answers to the question
 
@@ -42,7 +44,7 @@ let ans20 = document.getElementById("19");
 timer.textContent = "Time Left: " + score;
 timer.setAttribute("style", "float:right");
 countdown.appendChild(timer);
-
+// this is to blank out the page before staring with the title and questions screen 
 ans1.setAttribute("style", "display:none;");
 ans2.setAttribute("style", "display:none;");
 ans3.setAttribute("style", "display:none;");
@@ -69,6 +71,7 @@ submit.setAttribute("style", "display:none");
 start.addEventListener("click", function () {
   welcome.setAttribute("style", "display:none;");
 
+  //Sets the clock, and makes game end at zero
   let timeinterval = setInterval(function () {
     if (score > 0) {
       score--;
@@ -83,6 +86,7 @@ start.addEventListener("click", function () {
 
   takeQuiz();
 });
+
 //Question 1
 function takeQuiz() {
   const questionOne = "Which of the following is not a type of variable data ?";
@@ -154,8 +158,8 @@ function takeQuiz() {
     }
   });
 }
-//Question 2
 
+//Question 2
 function takeQuiz2() {
   const questionTwo = "When comparing values, which symbols means strictly equal to?";
   qs2.setAttribute("style", "font-size:40px; font-weight:bolder;");
@@ -286,6 +290,7 @@ function takeQuiz3() {
     }
   });
 }
+
 //Question 4
 function takeQuiz4() {
   const questionFour = "Use this command for displaying in the console while debugging. ";
@@ -351,6 +356,7 @@ function takeQuiz4() {
     }
   });
 }
+
 //Question 5
 function takeQuiz5() {
   const questionFive = "Which of these methods sorts characters Alphabetically";
@@ -447,14 +453,9 @@ function gameOver() {
 
   submit.addEventListener("click", function () {
     let data = document.getElementById("init").value;
-    console.log(data);
-    console.log(totalScore);
-
     if (totalScore < 0) {
-
-      totalScore = 0;
-      
-    }
+    totalScore = 0;
+      }
 
     localStorage.setItem("data", data);
     localStorage.setItem("totalScore", totalScore);
