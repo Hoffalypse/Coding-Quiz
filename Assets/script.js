@@ -44,7 +44,8 @@ let ans20 = document.getElementById("19");
 timer.textContent = "Time Left: " + score;
 timer.setAttribute("style", "float:right");
 countdown.appendChild(timer);
-// this is to blank out the page before staring with the title and questions screen 
+
+// this is to blank out the page before staring with the title screen and start button
 ans1.setAttribute("style", "display:none;");
 ans2.setAttribute("style", "display:none;");
 ans3.setAttribute("style", "display:none;");
@@ -443,6 +444,7 @@ function gameOver() {
   if (score < 0) {
     score = 0;
   }
+  
   let highScore = "All done your score is : " + score;
   high.append(highScore);
   let names = "Please enter your initials below";
@@ -456,7 +458,7 @@ function gameOver() {
     if (totalScore < 0) {
     totalScore = 0;
       }
-
+      //upload  names and initials to local storage 
     localStorage.setItem("data", data);
     localStorage.setItem("totalScore", totalScore);
 

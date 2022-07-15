@@ -28,7 +28,7 @@ function storeScores() {
 function getScores() {
   let storeArray = JSON.parse(localStorage.getItem("final"));
 
-  if (storeArray !== null) {
+  if (storeArray !== null ) {
     array = storeArray;
   }
   //adds new array to existing one
