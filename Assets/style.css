@@ -41,14 +41,22 @@ ol {
   color: white;
   border-radius: 15px;
   margin:3px;
+ 
 }
 
 #high {
 position: relative;
-align-items: center;
+top: -80px;
 text-align: center;  
 font-weight: bolder;
-font-size: 30px;
+font-size: 40px;
+}
+
+#submit {
+  background-color: rgb(226, 73, 73);
+  color: white;
+  border-radius: 15px;
+  margin:3px;
 }
 
 /* Leaderboard (second page) styling */
@@ -86,7 +94,6 @@ font-size: 30px;
  
 }
   
-
 
 /* Media queries to make the sizing for a better UI */
 @media screen and (max-width: 750px) {

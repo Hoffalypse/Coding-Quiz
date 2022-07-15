@@ -27,6 +27,7 @@ function storeScores() {
 //pulls past data into the leaderboard
 function getScores() {
   let storeArray = JSON.parse(localStorage.getItem("final"));
+  
 
   if (storeArray !== null ) {
     array = storeArray;
